@@ -22,6 +22,10 @@ Thin Mode Changes
 #)  Fixed bug that prevented connection pools from handing out new connections
     after a failure to close a connection takes place
     (`issue 610 <https://github.com/oracle/python-oracledb/issues/610>`__).
+#)  Added ``partition_name`` support to :meth:`Connection.direct_path_load()`
+    and :meth:`AsyncConnection.direct_path_load()` for loading data into a
+    specific partition or subpartition
+    (`issue 564 <https://github.com/oracle/python-oracledb/issues/564>`__).
 #)  Internal change: improved performance when sending Oracle Deep Data
     Security end-user security contexts.
 
